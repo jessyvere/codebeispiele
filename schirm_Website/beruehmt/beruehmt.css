@@ -1,0 +1,169 @@
+/*
+    hintergrund: #f4afcf
+    mittel: #EA9DC3
+    dunkel: #E28AB8
+    dunkel+: #DD73B0
+*/
+
+* {
+    font-family: 'Muli', Arial, sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+
+}
+
+body {
+    height: 100%;
+}
+
+#beruehmt {
+    background-color: #f4afcf;
+    border: 20px solid white;
+}
+
+#beruehmtSchriftzug {
+    color: #DD73B0;
+}
+
+article {
+    margin: 200px 0 200px 210px;
+    font-size: 18px;
+}
+
+.mitSchatten {
+    -webkit-box-shadow: 20px 20px #E28AB8;
+    -moz-box-shadow: 20px 20px #E28AB8;
+    box-shadow: 20px 20px #E28AB8;
+    font-weight: bold;
+    padding: 60px;
+    margin: 0 10% 10% 3%;
+    background-color: #EA9DC3;
+    color: #EEE;
+}
+
+
+.ohneSchatten {
+    font-weight: lighter;
+    padding: 60px;
+    margin: 0 10% 0 3%;
+    background-color: #EA9DC3;
+    color: #EEE;
+}
+
+.bold {
+    color: #DD73B0;
+}
+
+.textUndBild {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+    /*horizontal center*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+    /*vertikal center*/
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+
+    margin: 30px 10% 30px 0;
+    padding: 60px 0;
+}
+
+.dunklerKasten {
+    background-color: #EA9DC3;
+    padding-left: 60px;
+    position: relative;
+    left: 20px;
+}
+
+.text {
+    display: none;
+    width: 30%;
+    height: 80%;
+    padding-left: 2%;
+
+}
+
+.bild {
+    height: 80%;
+    flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 15px;
+    }
+
+    .textUndBild {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        flex-direction: column;
+
+    }
+
+    .dunklerKasten {
+        height: 500px;
+        background-color: transparent;
+        margin-right: 100px;
+        padding-bottom: 200px;
+    }
+
+    .bild {
+        height: 400px;
+    }
+
+    .text {
+        padding: 20px;
+        margin-top: 20px;
+        width: 160%;
+
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    body {
+        height: 7100px;
+    }
+
+    article {
+        margin: auto;
+        font-size: 18px;
+        position: relative;
+        left: 10px;
+        top: 190px;
+    }
+
+    .bild {
+        height: 300px;
+    }
+
+    .text {
+       width: 90%;
+        text-align: center;
+    }
+
+}
+
+
+
+

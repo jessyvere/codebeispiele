@@ -1,0 +1,119 @@
+* {
+    font-family: 'Muli', Arial, sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+//border: 1px solid black;
+}
+
+p {
+    padding: 20px;
+}
+
+h1 {
+    margin: 0px 20px;
+    padding: 0px;
+}
+
+.box {
+    background-color: #e0c365;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 70%;
+    margin: 100px 0px 100px auto;
+}
+
+.div-kunst {
+    background-color: #e0c365;
+    flex-basis: 50%;
+    margin: 20px 0px 20px 20px;
+
+}
+
+#kunst {
+    background-color: #f5d769;
+    border: 20px solid white;
+    height: 100%
+}
+
+#derarmepoet, #hitersraetsel, #fraumitsonnenschirm, #dieregenschirme {
+    padding: 20px 0px;
+    margin: auto 20px;
+    flex-basis: 50%;
+    flex-shrink: 0;
+}
+
+#derarmepoet {
+    max-width: 347px;
+    max-height: 277px;
+}
+
+#hitersraetsel {
+    max-width: 347px;
+    max-height: 234px;
+
+}
+
+#fraumitsonnenschirm {
+    max-width: 347px;
+    max-height: 528px;
+
+}
+
+#dieregenschirme {
+    max-width: 347px;
+    max-height: 540px;
+
+}
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 15px;
+    }
+    h1 {
+        padding-top: 10px;
+    }
+
+    .box {
+        background-color: #f5d769;
+        flex-wrap: wrap;
+        margin-left: 200px;
+
+    }
+
+    .div-kunst {
+        background-color: #e0c365;
+        box-shadow: 20px 20px #c1a75d;
+        margin: 20px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+
+    article {
+        margin: auto;
+        font-size: 18px;
+        position: relative;
+        left: 10px;
+        top: 190px;
+    }
+
+    .box {
+        width: 100%;
+        margin-left: 50px;
+    }
+
+
+
+    #kunst {
+        height: 3300px;
+    }
+}
+
+

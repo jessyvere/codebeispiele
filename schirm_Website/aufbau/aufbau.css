@@ -1,0 +1,345 @@
+/*
+hintergrund: #9F9CCD
+mittleldunkel: #9191C6
+dunkel: #8383BA
+dunkel+: #6464AF
+*/
+
+body {
+    background-color: #9F9CCD;
+    height: 100%;
+}
+
+#aufbauRegenschirmBild {
+    display: block;
+}
+
+#aufbauSchriftzug {
+    display: block;
+}
+
+article {
+    margin: 200px 0 200px 210px;
+    font-size: 18px;
+}
+
+#aufbauSkizze {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.mitSchatten {
+    -webkit-box-shadow: 20px 02px #8383BA;
+    -moz-box-shadow: 20px 20px #8383BA;
+    box-shadow: 20px 20px #8383BA;
+    font-weight: bold;
+    padding: 60px;
+    margin: 0 10% 0 3%;
+    background-color: #9191C6;
+    color: #EEE;
+}
+
+.ohneSchatten {
+    font-weight: lighter;
+    padding: 60px;
+    margin: 0 10% 0 3%;
+    background-color: #8383BA;
+    color: #EEE;
+}
+
+.bold {
+    color: #6464AF;
+}
+
+.textUndBild {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+    /*horizontal center*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+    /*vertikal center*/
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+
+    margin: 30px 10% 30px 0;
+    padding: 60px 0;
+}
+
+/*----------------------------------------------------- Segmente  */
+#textSegmente {
+    width: 30%;
+    height: 80%;
+}
+
+#segmente {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Muster  */
+
+#textMuster {
+    width: 30%;
+    height: 80%;
+}
+
+#muster {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Normal  */
+
+#formNormalText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#normalSkizze {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Glocke  */
+
+.dunklerKasten {
+    background-color: #8383BA;
+    padding-left: 60px;
+    position: relative;
+    left: 20px;
+}
+
+#formGlockeText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#glockeSkizze {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Pagode  */
+
+#formPagodeText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#pagodenSkizze {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Zwei-Dach  */
+
+#formZweiDachText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#zweiDachSkizze {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Wagasa  */
+
+#formWagasaText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#wagasaSkizze {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Wagasa  */
+
+#formAssymetrischText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#assymetrischSkizze {
+    width: 30%;
+}
+
+/*----------------------------------------------------- Doppel  */
+
+#formDoppelschirmText {
+    width: 40%;
+    height: 80%;
+    margin: 30px 0 30px 10%;
+}
+
+#doppelSkizze {
+    width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+
+    * {
+        font-size: 15px;
+    }
+
+    .textUndBild {
+        -webkit-box-orient: vertical;
+        -moz-box-orient: vertical;
+        box-orient: vertical;
+        flex-direction: column;
+    }
+
+    .dunklerKasten {
+        padding: 0;
+    }
+
+    .ohneSchatten {
+        padding: 0;
+    }
+    /*----------------------------------------------------- Segmente  */
+
+    #segmenteDiv {
+        padding: 0;
+    }
+    #segmente {
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        transform: rotate(90deg);
+        width: 25%;
+    }
+
+    #textSegmente{
+        margin-top: -50px;
+        width: 59%;
+        -webkit-order: 2;
+        -moz-order: 2;
+        order: 2;
+    }
+
+
+    /*----------------------------------------------------- Muster  */
+
+    #musterDiv {
+        padding: 0;
+    }
+    #muster {
+        -webkit-order: 1;
+        -moz-order: 1;
+        order: 1;
+        transform: rotate(90deg);
+        width: 25%;
+    }
+
+    #textMuster {
+        margin-top: -50px;
+        width: 59%;
+        -webkit-order: 2;
+        -moz-order: 2;
+        order: 2;
+    }
+
+    /*----------------------------------------------------- Schrimarten  */
+    #formNormalText {
+        width: 170px;
+        margin: 30px 20px 30px 0;
+    }
+
+    #normalSkizze {
+        width: 50%;
+    }
+
+    #formGlockeText {
+        width: 90%;
+    }
+
+    #glockeSkizze {
+        width: 50%;
+    }
+
+    #formPagodeText {
+        width: 50%;
+    }
+
+    #pagodenSkizze {
+        width: 50%;
+    }
+
+    #formZweiDachText {
+        width: 50%;
+    }
+
+    #zweiDachSkizze {
+        width: 50%;
+    }
+
+    #formWagasaText {
+        width: 50%;
+    }
+
+    #wagasaSkizze {
+        width: 50%;
+    }
+
+    #formAssymetrischText {
+        width: 50%;
+    }
+
+    #assymetrischSkizze {
+        width: 50%;
+    }
+
+    #formDoppelschirmText {
+        width: 50%;
+    }
+
+    #doppelSkizze {
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    * {
+        font-size: 12px;
+    }
+
+    body {
+        height: 5900px;
+    }
+
+
+    article {
+        padding: 0;
+        margin: 0;
+        position: relative;
+        left: 20px;
+        top: 190px;
+    }
+
+    #muster {
+        width: 20%;
+    }
+
+    #segmente {
+        width: 20%;
+    }
+}
+
+/*
+
+*/

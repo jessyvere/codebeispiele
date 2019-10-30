@@ -1,0 +1,55 @@
+* {
+    font-family: 'Muli', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: #999;
+
+}
+body {
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100vw;
+    height: 100%;
+    margin: 0 auto;
+    background: #CCC;
+    border: 20px solid #EEE;
+}
+#kleinerRegenschirm {
+    width: 10%;
+}
+
+article {
+    text-align: center;
+    margin: 50px;
+
+}
+
+strong {
+    color: #555;
+}
+
+.kunstwerk{
+    color: #777;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    * {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    * {
+        font-size: 12px;
+    }
+}
+
+
+
+
+

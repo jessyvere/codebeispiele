@@ -1,0 +1,190 @@
+/*
+hintergrund: 85A5D7
+mittel: 769DD6
+dunkel: 5A8DBF
+dunkel+: 3E7FB5
+*/
+body {
+    background-color: #85A5D7;
+    height: 120%;
+}
+
+#geschichteRegenschirmBild {
+    display: block;
+}
+
+#geschichteSchriftzug {
+    display: block;
+}
+
+article {
+    margin: 100px 0;
+    font-size: 18px;
+    color: #EEE;
+
+}
+
+.line {
+    width: 300px;
+}
+
+#text {
+    width: 110%;
+    position: relative;
+
+}
+
+#text ul {
+    list-style-type: none;
+    margin-left: 20%;
+}
+
+#text p {
+    max-width: 50%;
+}
+
+#text hr {
+    width: 80%;
+}
+
+#text ul li {
+    background-color: #769DD6;
+    box-shadow: 20px 20px #5F91CE;
+    padding: 60px;
+    margin: 30px 0 60px 0;
+    width: 65%;
+}
+
+#geschichtstext {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-box-orient: horizontal;
+    -moz-box-orient: horizontal;
+    box-orient: horizontal;
+    flex-direction: row;
+    /*horizontal center*/
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    justify-content: center;
+    /*vertikal center*/
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    box-align: center;
+    align-items: center;
+}
+
+#schirmstockMitKasten {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 1%;
+}
+
+#schirmstockOhneKasten {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 1%;
+    display: none;
+}
+
+#auffueller {
+    height: 200px;
+}
+
+@media screen and (max-width: 1000px) {
+
+    #text {
+        width: 80%;
+        margin-right: -40px;
+    }
+
+    #text ul li {
+        background-color: #769DD6;
+        box-shadow: 20px 20px #5F91CE;
+        padding: 60px;
+        margin: 30px 0 60px 0;
+        width: 65%;
+    }
+
+    #schirmstockMitKasten {
+        display: none;
+    }
+
+    #schirmstockOhneKasten {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    .linie {
+        margin-left: 40px;
+    }
+
+    #text {
+        margin-left: 20px;
+        font-size: 15px;
+
+    }
+
+    #text ul li {
+        padding: 40px;
+    }
+
+    #text p {
+        max-width: 90%;
+    }
+
+    #schirmstockMitKasten {
+        display: none;
+    }
+
+    #schirmstockOhneKasten {
+        display: none;
+    }
+
+    #geschichte {
+        height: 100%;
+    }
+
+    #auffueller {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #text {
+        font-size: 12px;
+        margin-left: -100px;
+
+    }
+
+    .linie {
+        margin-left: 0px;
+    }
+
+    #auffueller {
+        display: none;
+    }
+
+    article {
+        margin-top: 270px;
+
+    }
+
+}
+
+
+
+

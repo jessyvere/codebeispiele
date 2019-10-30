@@ -1,0 +1,115 @@
+/*
+ geschichte 85A5D7
+ aufbau 8383BA
+ beruehmt  F4B0CF
+ kunst F6D86A
+ alternativ 79BCB6
+*/
+
+* {
+    font-family: 'Muli', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    position: relative;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    width: 100vw;
+    height: 100vh;
+    margin: 0 auto;
+    background: #CCC;
+    border: 20px solid #EEE;
+}
+
+nav {
+    /*border: 1px dotted red;*/
+    /*position : fixed;*/
+    position: absolute;
+    width: 300px;
+    height: 314px;
+    margin: -150px 0 0 -157px;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+/* ----------------------------------------------------- Schriftzug Menü  */
+.schriftzug {
+    display: none;
+    position: fixed;
+    margin-left: 80px;
+    top: 14%;
+    left: auto;
+    font-size: 30px;
+    z-index: 2;
+}
+
+#geschichteSchriftzug {
+    color: #3E7FB5;
+}
+
+#aufbauSchriftzug {
+    color: #6464AF;
+}
+
+#beruehmtSchriftzug {
+    color: #DD73B0;
+}
+
+#kunstSchriftzug {
+    color: #f5bb2a;
+}
+
+#alternativenSchriftzug {
+    color: #1C8273;
+}
+
+/* ----------------------------------------------------- Bilder Menü  */
+.menueBilder {
+    position: absolute;
+    width: 300px;
+    display: none;
+}
+
+#leererRegenschirmBild {
+    display: block;
+}
+
+.link {
+    position: absolute;
+    width: 290px;
+    height: 30px;
+    margin: -10px 0 0 -153px;
+    top: 150px;
+    left: 157px;
+}
+
+#geschichteLink {
+    transform: rotate(-71deg);
+}
+
+#aufbauLink {
+    transform: rotate(-35deg);
+}
+
+#beruehmtLink {
+}
+
+#kunstLink {
+    transform: rotate(35deg);
+}
+
+#alternativenLink {
+    transform: rotate(71deg);
+}
+
+
+
+
+
+
+
